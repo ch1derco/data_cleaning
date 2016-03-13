@@ -59,5 +59,7 @@ setwd("./Coursera/DataClean")
 #  E) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 #
 	datastdmn2	<- melt(datastdmn, id=c("subjectID", "activity"))
-	datastdmn3	<- dcast(datastdmn2, subjectID+activity ~ variable, mean)	
+	datastdmn3	<- dcast(datastdmn2, subjectID+activity ~ variable, mean)
+
+	write.table(datastdmn3, file = "./step5_data.txt")	
 #  
