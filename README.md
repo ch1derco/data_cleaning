@@ -1,4 +1,4 @@
-# data_cleaning
+# run_analysis.R script
 
   the  run_analysis.R script does the following.
   A) Merges the training and the test sets to create one data set.
